@@ -18,7 +18,7 @@ class WebSocketController: TextWebSocketHandler() {
     }
 
     /**
-     * セッションが開いた際に呼び出される関数
+     * セッションが開いた際に呼び出される関数(ハンドシェイクの完了後)
      */
     override fun afterConnectionEstablished(session: WebSocketSession) {
         sessions.add(session)
